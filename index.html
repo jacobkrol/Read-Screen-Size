@@ -1,0 +1,21 @@
+<html>
+<body>
+<p>Window Width: <span id="window-w"></span></p>
+<p>Window Height: <span id="window-h"></span></p>
+<!-- <p>Document Width: <span id="doc-w"></span></p> -->
+<!-- <p>Document Height: <span id="doc-h"></span></p> -->
+</body>
+
+<script type="text/javascript">
+document.getElementById('window-w').innerText = window.innerWidth;
+document.getElementById('window-h').innerText = window.innerHeight;
+// document.getElementById('doc-w').innerText = document.height;
+// document.getElementById('doc-h').innerText = document.width;
+
+window.onresize = function() {
+    document.getElementById('window-w').innerText = window.innerWidth;
+    document.getElementById('window-h').innerText = window.innerHeight;
+}
+
+</script>
+</html>
